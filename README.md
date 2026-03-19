@@ -6,7 +6,7 @@ Ein professionelles Kontaktformular im Corporate Design der Deutschen Vermögens
 
 - ✅ **Professionelles DVAG-Design** mit Gold, Grau und Weiß
 - ✅ **Vollständiges Kontaktformular** mit Name, Telefon, E-Mail und Nachricht
-- ✅ **Portrait-Sektion** für Vaathulan Perimparajah mit Beschreibung
+- ✅ **Portrait-Sektion** für Vaathulan Perinparajah mit Beschreibung
 - ✅ **Firebase-Integration** zur automatischen Datenspeicherung
 - ✅ **E-Mail-Benachrichtigungen** via EmailJS an christof.didi@googlemail.com
 - ✅ **Echtzeit-Validierung** aller Eingabefelder
@@ -125,7 +125,7 @@ Parallel wird eine formatierte E-Mail an christof.didi@googlemail.com gesendet.
       "date": "15.01.2024",
       "time": "10:30:00",
       "status": "neu",
-      "bearbeiter": "Vaathulan Perimparajah"
+      "bearbeiter": "Vaathulan Perinparajah"
     }
   }
 }
@@ -145,7 +145,7 @@ Das Formular validiert automatisch:
 ### Portrait-Bild ändern
 Ersetzen Sie in `index.html` Zeile 18 die Platzhalter-URL:
 ```html
-<img src="pfad/zum/ihrem/bild.jpg" alt="Vaathulan Perimparajah">
+<img src="pfad/zum/ihrem/bild.jpg" alt="Vaathulan Perinparajah">
 ```
 
 ### Firmenfarben anpassen
@@ -171,11 +171,11 @@ Bei Fragen oder Problemen:
 
 ## 📄 Lizenz
 
-Erstellt für Vaathulan Perimparajah - Deutsche Vermögensberatung AG  
+Erstellt für Vaathulan Perinparajah - Deutsche Vermögensberatung AG  
 © 2026 - Alle Rechte vorbehalten
 
 ---
 
 **Version:** 1.0  
 **Erstellt:** November 2024 (aktualisiert 2026)  
-**Entwickelt für:** Vaathulan Perimparajah, Vermögensberater DVAG
+**Entwickelt für:** Vaathulan Perinparajah, Vermögensberater DVAG
