@@ -1,4 +1,4 @@
-// Firebase Configuration - DVAG Peter Köpplinger
+// Firebase Configuration - DVAG Vaathulan Perimparajah
 const firebaseConfig = {
     apiKey: "AIzaSyCJ7fThqn2fmFvgIgVabX96Qb37MFfdhVg",
     authDomain: "dvag-9ace3.firebaseapp.com",
@@ -263,7 +263,7 @@ async function saveToFirebase(data) {
         const fullData = {
             ...data,
             status: 'neu',
-            bearbeiter: 'Peter Köpplinger'
+            bearbeiter: 'Vaathulan Perimparajah'
         };
         
         console.log('📦 Vollständige Daten zum Speichern:', fullData);
@@ -305,7 +305,7 @@ async function sendEmailNotification(data) {
         const emailParams = {
             // An: Ihre E-Mail-Adresse
             to_email: 'christof.didi@googlemail.com',
-            to_name: 'Peter Köpplinger',
+            to_name: 'Vaathulan Perimparajah',
             reply_to: data.email, // Antwort-Adresse für direkten Kundenkontakt
             
             // Von: Kunde
@@ -322,7 +322,7 @@ async function sendEmailNotification(data) {
             timestamp: data.timestamp,
             
             // Betreff
-            subject: `Neue Kontaktanfrage von ${data.name} - DVAG Peter Köpplinger`
+            subject: `Neue Kontaktanfrage von ${data.name} - DVAG Vaathulan Perimparajah`
         };
         
         console.log('📮 Sende E-Mail mit Parametern:', emailParams);
@@ -491,7 +491,7 @@ style.textContent = `
 document.head.appendChild(style);
 
 // Console-Log für Debugging
-console.log('🔥 DVAG Kontaktformular geladen - Peter Köpplinger');
+console.log('🔥 DVAG Kontaktformular geladen - Vaathulan Perimparajah');
 console.log('📊 Firebase Config:', firebaseConfig.projectId ? 'Konfiguriert ✅' : 'NICHT KONFIGURIERT ❌');
 console.log('🗃️ Database URL:', firebaseConfig.databaseURL);
 console.log('🆔 Project ID:', firebaseConfig.projectId);
