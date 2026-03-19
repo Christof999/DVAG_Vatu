@@ -49,12 +49,22 @@ body {
     box-shadow: 0 2px 15px var(--shadow-dark);
     display: flex;
     align-items: center;
+    overflow: hidden;
+}
+
+.top-logo-bar img {
+    flex-shrink: 1;
+    min-width: 0;
 }
 
 .top-logo {
     height: 45px;
+    max-height: 45px;
     width: auto;
+    max-width: 200px;
     display: block;
+    object-fit: contain;
+    object-position: left center;
 }
 
 /* Header Styles mit schräger Neigung */
@@ -666,7 +676,9 @@ footer p:last-child {
     }
     
     .top-logo {
-        height: 40px;
+        height: 40px !important;
+        max-height: 40px !important;
+        max-width: 160px !important;
     }
     
     .top-logo-bar {
