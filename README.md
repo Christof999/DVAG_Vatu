@@ -1,4 +1,4 @@
-# DVAG Kontaktformular - Peter Köpplinger
+# DVAG Kontaktformular - Vatu
 
 Ein professionelles Kontaktformular im Corporate Design der Deutschen Vermögensberatung AG (DVAG) mit Firebase-Integration zur automatischen Speicherung von Kundenanfragen.
 
