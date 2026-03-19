@@ -20,7 +20,7 @@ DVGA_Landing/
 ├── index.html                          # Hauptseite mit Kontaktformular
 ├── styles.css                          # CSS-Styling im DVAG-Design mit Animationen
 ├── script.js                           # JavaScript mit Firebase + EmailJS Integration
-├── Deutsche_Vermögensberatung_logo.svg.png  # DVAG Logo
+├── DVAG_logo.png  # DVAG Logo (oben links)
 ├── FIREBASE_SETUP.md                   # Detaillierte Firebase-Anleitung
 ├── EMAILJS_SETUP.md                    # Detaillierte EmailJS-Anleitung
 ├── GITHUB_SETUP.md                     # GitHub Repository Setup-Anleitung
