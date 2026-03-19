@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontaktformular - Peter Köpplinger | DVAG</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo-container">
+                <img src="Deutsche_Vermögensberatung_logo.svg.png" alt="DVAG Logo" class="logo">
+            </div>
+            <div class="portrait-section">
+                <div class="portrait-card" id="portraitCard" style="cursor: pointer;">
+                    <div class="portrait-image">
+                        <img src="bba80eb1-d0f8-40bf-9fa9-bef2a8c8f6e2.jpeg" alt="Peter Köpplinger" id="portrait-img">
+                    </div>
+                    <div class="portrait-info">
+                        <h2>Peter Köpplinger</h2>
+                        <p>Ihr persönlicher Vermögensberater</p>
+                        <p class="description">Ich kümmere mich vollumfänglich um alle Anliegen und stehe Ihnen mit meiner Expertise zur Verfügung.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <section class="intro-section">
+                <h1>Kontaktieren Sie mich</h1>
+                <p>Haben Sie Fragen zu Ihren Finanzen oder benötigen Sie eine persönliche Beratung? Ich freue mich auf Ihre Nachricht und melde mich schnellstmöglich bei Ihnen zurück.</p>
+            </section>
+
+            <section class="contact-form-section">
+                <div class="form-container">
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Ihr Name *</label>
+                            <input type="text" id="name" name="name" required placeholder="Max Mustermann">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Telefonnummer *</label>
+                            <input type="tel" id="phone" name="phone" required placeholder="+49 123 456 7890">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">E-Mail-Adresse *</label>
+                            <input type="email" id="email" name="email" required placeholder="max.mustermann@email.de">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Ihr Anliegen / gewünschte Versicherung *</label>
+                            <textarea id="message" name="message" required rows="5" placeholder="Beschreiben Sie Ihr Anliegen oder Ihre Fragen..."></textarea>
+                        </div>
+
+                        <div class="form-group privacy-notice">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="privacy" name="privacy" required>
+                                <span class="checkmark"></span>
+                                Ich stimme der Verarbeitung meiner Daten für die Kontaktaufnahme zu. *
+                            </label>
+                        </div>
+
+                        <button type="submit" class="submit-btn">
+                            <span class="btn-text">Nachricht senden</span>
+                            <span class="loading-spinner" style="display: none;">Wird gesendet...</span>
+                        </button>
+                    </form>
+
+                    <div id="success-message" class="success-message" style="display: none;">
+                        <div class="success-icon">✓</div>
+                        <h3>Vielen Dank für Ihre Anfrage!</h3>
+                        <p>Ihre Nachricht wurde erfolgreich übermittelt. Ich setze mich innerhalb der nächsten 24 Stunden mit Ihnen in Verbindung, um Ihr Anliegen persönlich zu besprechen.</p>
+                        
+                        <div class="contact-info">
+                            <h4>Peter Köpplinger</h4>
+                            <p>Ihr persönlicher Vermögensberater</p>
+                            <p>Deutsche Vermögensberatung AG</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Peter Köpplinger - Deutsche Vermögensberatung AG</p>
+            <p>Ihr vertrauensvoller Partner für alle Finanzangelegenheiten</p>
+        </div>
+    </footer>
+
+    <!-- Visitenkarten-Modal -->
+    <div id="businessCardModal" class="modal-overlay" style="display: none;">
+        <div class="modal-card">
+            <button class="modal-close" id="modalClose">&times;</button>
+            <div class="modal-portrait">
+                <img src="bba80eb1-d0f8-40bf-9fa9-bef2a8c8f6e2.jpeg" alt="Peter Köpplinger">
+            </div>
+            <h3>Peter Köpplinger</h3>
+            <p class="modal-title">Vermögensberater</p>
+            <p class="modal-company">Deutsche Vermögensberatung AG</p>
+            <div class="modal-divider"></div>
+            <div class="modal-contact">
+                <a href="mailto:peter.koepplinger@dvag.de" class="modal-contact-item">
+                    <span class="modal-icon">&#9993;</span>
+                    <span>peter.koepplinger@dvag.de</span>
+                </a>
+                <a href="tel:+4915115229636" class="modal-contact-item">
+                    <span class="modal-icon">&#9742;</span>
+                    <span>0151 15229636</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- EmailJS SDK -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    
+    <!-- Firebase SDK -->
+    <script type="module" src="script.js"></script>
+</body>
+</html>
