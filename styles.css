@@ -28,12 +28,33 @@ body {
     color: var(--dvag-gray-dark);
     background-color: var(--dvag-gray-light);
     overflow-x: hidden; /* Verhindert horizontales Scrollen durch schräge Elemente */
+    padding-top: 75px; /* Platz für das fixed Logo oben */
 }
 
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
+}
+
+/* DVAG Logo oben links - feste Position */
+.top-logo-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1001;
+    background: var(--dvag-white);
+    padding: 15px 20px;
+    box-shadow: 0 2px 15px var(--shadow-dark);
+    display: flex;
+    align-items: center;
+}
+
+.top-logo {
+    height: 45px;
+    width: auto;
+    display: block;
 }
 
 /* Header Styles mit schräger Neigung */
@@ -640,6 +661,18 @@ footer p:last-child {
 
 /* Mobile Geräte */
 @media (max-width: 480px) {
+    body {
+        padding-top: 70px;
+    }
+    
+    .top-logo {
+        height: 40px;
+    }
+    
+    .top-logo-bar {
+        padding: 12px 15px;
+    }
+    
     header {
         padding: 25px 0 35px 0;
     }
