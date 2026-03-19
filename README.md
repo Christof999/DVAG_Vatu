@@ -172,10 +172,10 @@ Bei Fragen oder Problemen:
 ## 📄 Lizenz
 
 Erstellt für Vaathulan Perimparajah - Deutsche Vermögensberatung AG  
-© 2024 - Alle Rechte vorbehalten
+© 2026 - Alle Rechte vorbehalten
 
 ---
 
 **Version:** 1.0  
-**Erstellt:** November 2024  
+**Erstellt:** November 2024 (aktualisiert 2026)  
 **Entwickelt für:** Vaathulan Perimparajah, Vermögensberater DVAG
